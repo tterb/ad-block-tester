@@ -4,6 +4,7 @@
   "description": "A set of accessible web tools",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
+    "prod": "webpack serve --config config/webpack.prod.js",
     "build": "webpack --config config/webpack.prod.js",
     "build-list": "node src/script/build_list.js",
     "purge": "node config/purgecss.mjs",
@@ -22,7 +23,7 @@
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^6.8.1",
+    "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
@@ -39,8 +40,8 @@
     "prettier": "^2.8.8",
     "purgecss-webpack-plugin": "^5.0.0",
     "reachable-url": "^1.7.1",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
     "style-loader": "^3.3.3",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
