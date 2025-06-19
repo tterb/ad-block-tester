@@ -70,12 +70,18 @@ module.exports = {
 			{
 				test: /\.(sa|sc|c)ss$/,
 				use: [
-					MiniCssExtractPlugin.loader, // Extract CSS from commonjs
-					'css-loader', // Turn css into commonjs
+					// MiniCssExtractPlugin.loader, // Extract CSS from commonjs
+					// 'css-loader', // Turn css into commonjs
 					{
-						// Turn scss into css
+						loader: 'style-loader'
+					},
+					{
+						loader: 'css-loader'
+					},
+					{
 						loader: 'sass-loader',
 						options: {
+							implementation: require('sass'),
 							sassOptions: {
 								quietDeps: true, // Suppresses warnings from dependencies
 								silenceDeprecations: ['legacy-js-api', 'import']
