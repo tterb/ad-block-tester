@@ -14,12 +14,16 @@ module.exports = merge(main, {
 			})
 		]
 	},
+	output: {
+	  publicPath: '/ad-block-test',
+	},
 	devServer: {
 		static: {
 			directory: config.dist,
-			publicPath: '/'
+			publicPath: '/ad-block-test'
 		},
 		compress: true,
+		allowedHosts: ['all'],
 		port: 5556,
 		hot: true,
 		open: '/',
