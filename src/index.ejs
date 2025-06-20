@@ -3,10 +3,9 @@
 <%- include('partials/head.ejs',
 		{
 			page:'adblock',
-			title:'Test Ad Block - Toolz',
+			title:'Ad Block Tester',
 			description:"Check your ad blocker's efficiency effortlessly with Toolz. Our intuitive and visually appealing tool lets you test the performance of your ad or content blocker with just one click. Get quick, accurate insights to optimize your browsing experience and enjoy an ad-free journey with confidence.",
-			url: 'adblock.turtlecute.org',
-			preview_thumbnail:'https://github.com/Turtlecute33/toolz/blob/master/src/assets/preview_toolz.png',
+			url: 'http://network.pi/ad-block-test',
 			keywords:'adblock test,ad block test,ad blocker test,adblock,test adblock,analytics,trackers,ads,cosmetic filter,ublock, ublockorigin,adblock extension,script loading'
 		}) %>
 
@@ -227,7 +226,7 @@
                             <path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0" /></svg>
                         Settings</button>
                 </div>
-                <div>
+                <div class="compatibility-msg">
                     <div class="_bg-orange _txt-white _radius _p-1 better_r">
                         <b>
                           The test may not work as expected with some browser/blocker combinations. I found that the uBlock Origin extension breaks the final result. To fix it, add adblock.turtlecute.org as an exception in uBlock rules.<br>

@@ -15,7 +15,7 @@ module.exports = merge(main, {
 		]
 	},
 	output: {
-	  publicPath: '/ad-block-test',
+		publicPath: '/ad-block-test'
 	},
 	devServer: {
 		static: {
