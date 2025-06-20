@@ -1,5 +1,5 @@
 {
-  "name": "toolz",
+  "name": "ad-block-test",
   "version": "3.1.2",
   "description": "A set of accessible web tools",
   "scripts": {
@@ -14,9 +14,6 @@
   },
   "author": "Eduard Ursu",
   "license": "(CC BY-NC-SA 4.0)",
-  "bugs": {
-    "url": "https://github.com/d3ward/toolz/issues"
-  },
   "dependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
